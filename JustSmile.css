@@ -100,3 +100,7 @@ Body{
   position: relative;
   transition-duration: 0.5s;
 }
+
+
+@media only screen and (max-width: 600px) {
+}
