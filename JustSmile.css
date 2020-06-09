@@ -1,0 +1,102 @@
+Body{
+  background-color: var(--bg-color);
+  color: #f8f8f8;
+  width: 100%;
+  overflow-x: hidden;
+  --bg-color:#000;
+  --blue-accent: #0a47a0;
+}
+
+/*Scroll Bar*/
+::-webkit-scrollbar{
+  width: 0px;
+}
+
+#ProgressBar{
+    --scroll: 0%;
+      background: linear-gradient(to bottom,rgb(0, 0, 204) var(--scroll),transparent 0);
+      position: fixed;
+      height: 100%;
+      width: 5px;
+      right:0px;
+      z-index: 100;
+}
+
+/*Navigation Bar*/
+
+#Navbar{
+  height: 100%; /* 100% Full-height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: var(--blue-accent); /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition-duration: 0.5s;
+}
+
+.Logo{
+  text-align: center;
+  opacity: 0;
+  margin-top: 20px;
+}
+
+.MenuItems{
+  opacity: 0;
+  margin-top:20px;
+}
+
+.MenuItems > li{
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.MenuItems > li > a{
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/*Main contents*/
+
+#NavbarButton{
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  top: 3;
+  left: 3;
+  position: absolute;
+  display: fixed;
+  cursor: pointer;
+}
+
+#NavbarButton > div{
+  transition-duration: 1s;
+  border-top: 2.5px solid var(--blue-accent);
+  margin: 7px;    
+}
+
+.line1{
+  transition-duration: 1s;
+  transform: rotate(-45deg) translate(-6px ,8px);
+}
+.line2{
+  transition-duration: 1s;
+  opacity: 0;
+}
+.line3{
+  transition-duration: 1s;
+  transform: rotate(45deg) translate(-6px, -7px);
+}
+
+/*Other Content*/
+#content{
+  width: 100%;
+  position: relative;
+  transition-duration: 0.5s;
+}
