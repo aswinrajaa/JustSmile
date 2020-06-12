@@ -41,4 +41,15 @@ $(document).ready(function(){
       },400);
     }
   });
+  $('#ToggleThemeButton').click(function(){
+    if(getComputedStyle(document.documentElement).getPropertyValue('--bg-color') == '#000'){
+      document.documentElement.style.setProperty('--bg-color',"#fff");
+      document.documentElement.style.setProperty('--font-color-1',"#000");
+      document.documentElement.style.setProperty('--font-color-2',"#fff");
+    }else{
+      document.documentElement.style.setProperty('--bg-color',"#000");
+      document.documentElement.style.setProperty('--font-color-1',"#fff");
+      document.documentElement.style.setProperty('--font-color-2',"#000");
+    }
+  });
 });
