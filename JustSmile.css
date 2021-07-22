@@ -1,6 +1,6 @@
 :root{
   --bg-color:#000;
-  --blue-accent: #0a47a0;
+  --accent-color: #0a47a0;
   --highestvalue:10;
   --font-color-1: #f8f8f8;
   --font-color-2: #000;
@@ -37,7 +37,7 @@ Body{
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: var(--blue-accent); /* Black*/
+  background-color: var(--accent-color); /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition-duration: 0.5s;
@@ -107,7 +107,7 @@ Body{
 
 #NavbarButton > div{
   transition-duration: 1s;
-  border-top: 2.5px solid var(--blue-accent);
+  border-top: 2.5px solid var(--accent-color);
   margin: 7px;    
 }
 
@@ -180,7 +180,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px var(--blue-accent);
+  box-shadow: 0 0 1px var(--accent-color);
 }
 
 input:checked + .slider:before {
@@ -205,7 +205,7 @@ input:checked + .slider:before {
   height: 100%;
   position: relative;
   transition-duration: 0.5s;
-  background: linear-gradient(to right, var(--bg-color) 30%, var(--blue-accent) );
+  background: linear-gradient(to right, var(--bg-color) 30%, var(--accent-color) );
 }
 
 .Main_content{
@@ -217,7 +217,7 @@ footer{
   min-height: 300px;
   max-height: 1000px;
   padding: 30px;
-  background-color: var(--blue-accent);
+  background-color: var(--accent-color);
 }
 
 .second_image{
